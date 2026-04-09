@@ -27,6 +27,7 @@
 
 ## https://github.com/Ruth0489/clima-disney
 
-     Autor
+---
+ ## Autor
 
 Ruth

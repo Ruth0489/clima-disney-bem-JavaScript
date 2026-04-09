@@ -1,14 +1,74 @@
 const ciudades = [
-  { nombre: "Frozen", temp: -4, humedad: 40, viento: 10 , img: "assets/img/frozen.jpg"  },
-  { nombre: "Mohana", temp: 22, humedad: 60, viento: 12, img: "assets/img/mohana.jpg" },
-  { nombre: "Zootopia", temp: 23, humedad: 55, viento: 11, img: "assets/img/zootopia.jpg" },
-  { nombre: "Encanto", temp: 20, humedad: 70, viento: 8, img: "assets/img/encanto.jpg" },
-  { nombre: "Hercules", temp: 18, humedad: 80, viento: 15, img: "assets/img/hercules.jpg"},
-  { nombre: "Dumbo", temp: 16, humedad: 85, viento: 14, img: "assets/img/dumbo.jpg" },
-  { nombre: "Bambi", temp: 14, humedad: 90, viento: 20, img: "assets/img/bambi.jpg" },
-  { nombre: "Mulan", temp: 26, humedad: 30, viento: 9, img: "assets/img/mulan.jpg" },
-  { nombre: "Pocahontas", temp: 27, humedad: 35, viento: 10, img: "assets/img/pocahontas.jpg" },
-  { nombre: "Bolt", temp: 10, humedad: 75, viento: 25, img: "assets/img/bolt.jpg" }
+  {
+    nombre: "Frozen",
+    temp: -4,
+    humedad: 40,
+    viento: 10,
+    img: "assets/img/frozen.jpg",
+  },
+  {
+    nombre: "Mohana",
+    temp: 22,
+    humedad: 60,
+    viento: 12,
+    img: "assets/img/mohana.jpg",
+  },
+  {
+    nombre: "Zootopia",
+    temp: 23,
+    humedad: 55,
+    viento: 11,
+    img: "assets/img/zootopia.jpg",
+  },
+  {
+    nombre: "Encanto",
+    temp: 20,
+    humedad: 70,
+    viento: 8,
+    img: "assets/img/encanto.jpg",
+  },
+  {
+    nombre: "Hercules",
+    temp: 18,
+    humedad: 80,
+    viento: 15,
+    img: "assets/img/hercules.jpg",
+  },
+  {
+    nombre: "Dumbo",
+    temp: 16,
+    humedad: 85,
+    viento: 14,
+    img: "assets/img/dumbo.jpg",
+  },
+  {
+    nombre: "Bambi",
+    temp: 14,
+    humedad: 90,
+    viento: 20,
+    img: "assets/img/bambi.jpg",
+  },
+  {
+    nombre: "Mulan",
+    temp: 26,
+    humedad: 30,
+    viento: 9,
+    img: "assets/img/mulan.jpg",
+  },
+  {
+    nombre: "Pocahontas",
+    temp: 27,
+    humedad: 35,
+    viento: 10,
+    img: "assets/img/pocahontas.jpg",
+  },
+  {
+    nombre: "Bolt",
+    temp: 10,
+    humedad: 75,
+    viento: 25,
+    img: "assets/img/bolt.jpg",
+  },
 ];
 
 //  FUNCIÓN PARA CAMBIAR ICONO SEGÚN TEMPERATURA
@@ -18,16 +78,16 @@ function obtenerIcono(temp) {
   return "bi-cloud-rain";
 }
 function obtenerColor(temp) {
-  if (temp >= 25) return "bg-warning";   // calor
-  if (temp >= 18) return "bg-light";     // templado
-  return "bg-info";                      // frío
+  if (temp >= 25) return "bg-warning"; // calor
+  if (temp >= 18) return "bg-light"; // templado
+  return "bg-info"; // frío
 }
 
 // HOME
 const contenedor = document.getElementById("contenedor-ciudades");
 
 if (contenedor) {
-  ciudades.forEach(ciudad => {
+  ciudades.forEach((ciudad) => {
     contenedor.innerHTML += `
       <div class="col-12 col-md-4 mb-3">
         <div class="card p-3 text-center shadow-lg border-5">
@@ -35,14 +95,7 @@ if (contenedor) {
         <h5>${ciudad.nombre}</h5>
 
 
-         
-
-
-
-
-
-
-          <p>
+         <p>
             <i class="bi ${obtenerIcono(ciudad.temp)}"></i>
             ${ciudad.temp}°C
           </p>
@@ -67,7 +120,7 @@ const detalle = document.getElementById("detalle");
 
 if (detalle) {
   const nombre = localStorage.getItem("ciudad");
-  const ciudad = ciudades.find(c => c.nombre === nombre);
+  const ciudad = ciudades.find((c) => c.nombre === nombre);
 
   if (ciudad) {
     detalle.innerHTML = `

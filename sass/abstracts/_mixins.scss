@@ -1,0 +1,18 @@
+@use '../abstracts/variables' as *;
+
+
+
+@mixin card-hover {
+  transition: $transicion;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: $sombra;
+  }
+}
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

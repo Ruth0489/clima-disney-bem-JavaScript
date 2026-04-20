@@ -1,0 +1,11 @@
+.navbar {
+  &__brand {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  &__btn {
+    text-transform: capitalize;
+  }
+}

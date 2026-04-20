@@ -1,0 +1,19 @@
+@use '../abstracts/variables' as *;
+
+.ciudades {
+  &__titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 40px;
+
+    &::after {
+      content: "";
+      display: block;
+      width: 60%;
+      height: 4px;
+      background: #1e2735;
+      margin: 10px auto 0;
+      border-radius: 10px;
+    }
+  }
+}

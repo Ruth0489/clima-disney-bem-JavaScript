@@ -1,3 +1,6 @@
+// =======================
+// DATOS
+// =======================
 const ciudades = [
   {
     nombre: "Frozen",
@@ -71,51 +74,66 @@ const ciudades = [
   },
 ];
 
-//  FUNCIÓN PARA CAMBIAR ICONO SEGÚN TEMPERATURA
+// =======================
+// FUNCIONES
+// =======================
+
+// ICONO SEGÚN TEMPERATURA
 function obtenerIcono(temp) {
   if (temp >= 25) return "bi-sun";
   if (temp >= 18) return "bi-cloud";
   return "bi-cloud-rain";
 }
+
+// COLOR (MODIFICADOR BEM)
 function obtenerColor(temp) {
-  if (temp >= 25) return "bg-warning"; // calor
-  if (temp >= 18) return "bg-light"; // templado
-  return "bg-info"; // frío
+  if (temp >= 25) return "card-clima--calor";
+  if (temp >= 18) return "card-clima--templado";
+  return "card-clima--frio";
 }
 
-// HOME
+// =======================
+// HOME (LISTADO)
+// =======================
 const contenedor = document.getElementById("contenedor-ciudades");
 
 if (contenedor) {
   ciudades.forEach((ciudad) => {
     contenedor.innerHTML += `
       <div class="col-12 col-md-4 mb-3">
-        <div class="card p-3 text-center shadow-lg border-5">
-          <img src="${ciudad.img}" class="card-img-top" alt="${ciudad.nombre}">
-        <h5>${ciudad.nombre}</h5>
+        <div class="card-clima ${obtenerColor(ciudad.temp)} p-3 text-center shadow-lg border-5">
 
+          <img src="${ciudad.img}" class="card-clima__img" alt="${ciudad.nombre}">
 
-         <p>
+          <h5 class="card-clima__titulo">${ciudad.nombre}</h5>
+
+          <p class="card-clima__temp">
             <i class="bi ${obtenerIcono(ciudad.temp)}"></i>
             ${ciudad.temp}°C
           </p>
 
-          <button class="btn btn-primary" onclick="verDetalle('${ciudad.nombre}')">
+          <button class="card-clima__btn btn btn-primary"
+            onclick="verDetalle('${ciudad.nombre}')">
             Ver detalle
           </button>
+
         </div>
       </div>
     `;
   });
 }
 
-// GUARDAR CIUDAD Y REDIRIGIR
+// =======================
+// GUARDAR Y REDIRIGIR
+// =======================
 function verDetalle(nombre) {
   localStorage.setItem("ciudad", nombre);
   window.location.href = "detalle.html";
 }
 
+// =======================
 // DETALLE
+// =======================
 const detalle = document.getElementById("detalle");
 
 if (detalle) {
@@ -125,6 +143,8 @@ if (detalle) {
   if (ciudad) {
     detalle.innerHTML = `
       <h2>${ciudad.nombre}</h2>
+
+      <img src="${ciudad.img}" class="detalle__img" alt="${ciudad.nombre}">
 
       <p>
         <i class="bi bi-thermometer"></i>
@@ -148,13 +168,9 @@ if (detalle) {
         <li>Miércoles: ${ciudad.temp}°C</li>
         <li>Jueves: ${ciudad.temp - 2}°C</li>
         <li>Viernes: ${ciudad.temp + 2}°C</li>
-      <li>Sabado: ${ciudad.temp - 2}°C</li>
+        <li>Sábado: ${ciudad.temp - 2}°C</li>
         <li>Domingo: ${ciudad.temp + 2}°C</li>
-      
-      
-      
-      
-        </ul>
+      </ul>
     `;
   }
 }

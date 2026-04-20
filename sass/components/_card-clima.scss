@@ -1,0 +1,39 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.card-clima {
+  border-radius: $radio;
+
+  @include card-hover;
+
+  &__img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  &__titulo {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  &__temp {
+    font-size: 18px;
+  }
+
+  &__btn {
+    margin-top: 10px;
+  }
+
+  &--calor {
+    background-color: $color-calor;
+  }
+
+  &--templado {
+    background-color: $color-templado;
+  }
+
+  &--frio {
+    background-color: $color-frio;
+  }
+}

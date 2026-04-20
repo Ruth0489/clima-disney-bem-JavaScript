@@ -6,6 +6,10 @@
 
   @include card-hover;
 
+  &__titulo {
+    font-weight: bold;
+  }
+
   &__img {
     width: 100%;
     height: 200px;
@@ -36,4 +40,6 @@
   &--frio {
     background-color: $color-frio;
   }
+
+  
 }

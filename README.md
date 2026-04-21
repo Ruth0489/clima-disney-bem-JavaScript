@@ -3,8 +3,8 @@
   
   Proyecto frontend que muestra el clima de distintas ciudades inspiradas en Disney.
 
-  ---
 
+---
   ## Tecnologías usadas
 
    - HTML
@@ -12,7 +12,7 @@
    - Bootstrap
    - JavaScript
 
-   ---
+   
 
  ## Funcionalidades
 
@@ -23,7 +23,7 @@
 
  Repositorio en GitHub
  
----
+
 
 ## Metodologias aplicadas
 - BEM para organizacion de clases CSS
@@ -39,7 +39,6 @@
 
 ## https://github.com/Ruth0489/clima-disney
 
----
  ## Autor
 
 Ruth

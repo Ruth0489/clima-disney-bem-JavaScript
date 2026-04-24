@@ -37,7 +37,8 @@
 - Se gestionó el proyecto con Git y GitHub mediante commits descriptivos
 
 
-## https://github.com/Ruth0489/clima-disney
+## Demo en linea
+[ ver aplicacion en GitHub](https://ruth0489.github.io/clima-disney/)
 
  ## Autor
 

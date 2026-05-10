@@ -1,1 +1,16 @@
-{"version":3,"sourceRoot":"","sources":["../../sass/base/_base.scss","../../sass/abstracts/_variables.scss","../../sass/layout/_navbar.scss","../../sass/layout/_footer.scss","../../sass/components/_card-clima.scss","../../sass/abstracts/_mixins.scss","../../sass/pages/_home.scss"],"names":[],"mappings":"AAEA;EACE,kBCHY;;;ACCZ;EACE;EACA;EACA;;AAGF;EACE;;;ACPF;EACE;;;ACCJ;EACE,eHEM;EIDN,YJGW;;AIDX;EACE;EACA,YJFK;;AGCP;EACE;EACA;EACA;;AAGF;EACE;EACA;;AAGF;EACE;;AAGF;EACE;;AAGF;EACE,kBH1BU;;AG6BZ;EACE,kBH7Ba;;AGgCf;EACE,kBHhCS;;;AKDX;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA","file":"styles.css"}
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../../sass/base/_base.scss",
+    "../../sass/abstracts/_variables.scss",
+    "../../sass/layout/_navbar.scss",
+    "../../sass/layout/_footer.scss",
+    "../../sass/components/_card-clima.scss",
+    "../../sass/abstracts/_mixins.scss",
+    "../../sass/pages/_home.scss"
+  ],
+  "names": [],
+  "mappings": "AAEA;EACE,kBCHY;;;ACCZ;EACE;EACA;EACA;;AAGF;EACE;;;ACPF;EACE;;;ACCJ;EACE,eHEM;EIDN,YJGW;;AIDX;EACE;EACA,YJFK;;AGCP;EACE;EACA;EACA;;AAGF;EACE;EACA;;AAGF;EACE;;AAGF;EACE;;AAGF;EACE,kBH1BU;;AG6BZ;EACE,kBH7Ba;;AGgCf;EACE,kBHhCS;;;AKDX;EACE;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA",
+  "file": "styles.css"
+}

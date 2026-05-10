@@ -11,6 +11,7 @@
    - CSS
    - Bootstrap
    - JavaScript
+   
 
    
 
@@ -39,6 +40,39 @@
 
 ## Demo en linea
 [ ver aplicacion en GitHub](https://ruth0489.github.io/clima-disney/)
+
+## Modelado de datos
+
+Los datos se almacenan en un arreglo de objetos llamado ciudades.
+
+Cada ciudad contiene:
+- id
+- nombre
+- temperatura actual
+- estado actual
+- humedad
+- viento
+- imagen
+- pronóstico semanal
+
+El pronóstico semanal es un arreglo con:
+- día
+- temperatura mínima
+- temperatura máxima
+- estado del clima
+
+## Estadísticas calculadas
+
+La aplicación calcula automáticamente:
+- temperatura mínima semanal
+- temperatura máxima semanal
+- temperatura promedio
+- cantidad de días soleados
+- cantidad de días lluviosos
+- cantidad de días nublados
+- cantidad de días nevados
+- resumen del clima semanal
+
 
  ## Autor
 

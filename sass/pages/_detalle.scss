@@ -1,0 +1,13 @@
+.body-detalle{
+    background: linear-gradient(to right, #dbeafe, #f0f9ff);
+    min-height: 100vh;
+
+    .detalle-card{
+        background: white;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 20px rgba(0,0,0,0.15);
+        max-width: 700px;
+        margin: auto;
+    }
+}

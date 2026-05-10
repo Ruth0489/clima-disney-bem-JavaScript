@@ -63,4 +63,41 @@ body {
   border-radius: 10px;
 }
 
+.body-detalle{
+    background: linear-gradient(to right, #dbeafe, #f0f9ff);
+    min-height: 100vh;
+}
+
+.detalle-card{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.15);
+    max-width: 700px;
+    margin: auto;
+}
+
+.detalle-card h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+    color: #1e3a8a;
+}
+
+.detalle-card h4{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #2563eb;
+    border-bottom: 2px solid #93c5fd;
+    padding-bottom: 5px;
+}
+
+.detalle-card p{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.detalle-card li{
+    margin-bottom: 8px;
+}
+
 /*# sourceMappingURL=styles.css.map */

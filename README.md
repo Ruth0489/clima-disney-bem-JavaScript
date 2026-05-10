@@ -76,4 +76,6 @@ La aplicación calcula automáticamente:
 
  ## Autor
 
+ https://github.com/Ruth0489/clima-disney-bem-JavaScript
+
 Ruth
